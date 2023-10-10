@@ -1,0 +1,18 @@
+GET http://localhost:8080/test_get/10 HTTP/1.1
+
+###
+POST http://localhost:8080/test_post HTTP/1.1
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "1234"
+}
+
+###
+POST http://localhost:8080/api/authen_request HTTP/1.1
+content-type: application/json
+
+{
+    "username": "81ca197348498ea69a162d824e400e89"
+}
